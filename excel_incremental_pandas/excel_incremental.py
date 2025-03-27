@@ -1,7 +1,7 @@
 import os 
 import pandas as pd
 from datetime import datetime
-def juntar_arquivos_excel_pasta(caminho_pasta):
+def juntar_arquivos_excel_pasta(caminho_pasta, caminho_destino):
     
     # Adicionando timestamp para usar no salvamento do arquivo
 
@@ -26,7 +26,7 @@ def juntar_arquivos_excel_pasta(caminho_pasta):
     resultado = pd.concat(lista_df, ignore_index=True)
     #Padroniza o nome do arquivo e adiciona uma data.
     nome_arquivo = f'resultado_{timestamp}.xlsx'
-    caminho_arquivo_salvo = os.path.join(caminho_pasta, nome_arquivo)
+    caminho_arquivo_salvo = os.path.join(caminho_destino, nome_arquivo)
     
     #Salva o arquivo na pasta e nome especificados em caminho_arquivo_salvo
 
