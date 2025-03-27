@@ -3,7 +3,7 @@
 ## Ricardo Marques
 
 
-O objetivo é pegar varios arquivos excel de uma pasta ou local especifico e adicionalos em um unico relatorio.
+### Projetos utilizando Pandas.
 
-Para isso sera utilzado a biblicoteca pandas e openpyxl.
-
+1) Excel Incremental 
+     - Salvando varios arquivos excel de uma pasta especifica em um unico arquivo de relatório.
